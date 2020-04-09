@@ -3,11 +3,11 @@
 #Copy & Paste below code
 !tar chvfz name_of_newfolder.tar.gz name_of_folder_uwantto_zip/*
 
-#upload a folder
+#upload a folder in current path
 #upload its zip file
 #create a cell
 import zipfile as zf
 files = zf.ZipFile("weights.zip", 'r')
-files.extractall('weights')
+files.extractall()
 files.close()
 
